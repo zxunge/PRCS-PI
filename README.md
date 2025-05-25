@@ -24,3 +24,6 @@ cmake --build .
 ./prcspi
 ````
 Use `./prcspi -h` for help.
+
+## Basic Principle
+![Basic Principle](principle.png "Basic Principle")
