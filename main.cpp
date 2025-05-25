@@ -8,6 +8,7 @@
 #include <ranges>
 #include <cctype>
 #include <print>
+#include <iostream>
 #include <vector>
 #include <sstream>
 #include <string_view>
@@ -15,6 +16,8 @@
 
 using std::vector;
 using std::println;
+using std::clog;
+using std::endl;
 using std::string_view;
 using std::stringstream;
 using real = mppp::real;
@@ -118,12 +121,13 @@ compute:
         bottomLeft.push_back(Line(Point(0, real("1.0", 512) / precision * (i + 1)), 
                                   Point(5.0 - real("1.0", 512) / precision * i, 0)));
         bottomRight.push_back(Line(Point(5.0 + real("1.0", 512) / precision * i, 0),
-                                   Point(0, real("1.0", 512) / precision * (i + 1))));
+                                   Point(10, real("1.0", 512) / precision * (i + 1))));
         topRight.push_back(Line(Point(5.0 + real("1.0", 512) / precision * i, 10),
                                 Point(10, 10.0 - real("1.0", 512) / precision * (i + 1))));
         topLeft.push_back(Line(Point(0, 10.0 - real("1.0", 512) / precision * (i + 1)),
                                Point(5.0 - real("1.0", 512) / precision * i, 10)));
     }
+    
     // Compute the intersection group.
     vector<Point> blInter, brInter, tlInter, trInter;
     blInter.push_back(Point(5, 0));
