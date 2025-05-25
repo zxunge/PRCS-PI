@@ -8,7 +8,6 @@
 #include <ranges>
 #include <cctype>
 #include <print>
-#include <iostream>
 #include <vector>
 #include <sstream>
 #include <string_view>
@@ -16,8 +15,6 @@
 
 using std::vector;
 using std::println;
-using std::clog;
-using std::endl;
 using std::string_view;
 using std::stringstream;
 using real = mppp::real;
