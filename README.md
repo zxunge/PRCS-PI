@@ -2,7 +2,7 @@
 Demonstrate how to compute the value of π in Plane Rectangular Coordinate System.
 
 ## Introduction
-This program uses a simple but special method to compute the value of π. To achieve high precisions, it uses the mp++(wrapper for GNU MPFR Library).
+This program uses a simple but special method to compute the value of π. To achieve high precisions, it uses [mp++](https://github.com/bluescarni/mppp) (wrapper for GNU MPFR Library).
 We notice that the result isn't very accurate. <br />
 This is the result computed under a 'precision' of 1(default):
 ````
