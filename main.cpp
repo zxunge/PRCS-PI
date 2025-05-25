@@ -59,7 +59,6 @@ public:
                      (l2.k() * lb - lk * l2.b()) / (l2.k() - lk));
     }
     
-    
 private:
     real lk {"0.0", 512};
     real lb {"0.0", 512};
@@ -71,7 +70,7 @@ int main(int argc, char *argv[])
     // Parse program arguments.
     vector<string_view> args;
     
-    // Enpty arguments?
+    // Empty arguments?
     if (argc == 1)
     {
         precision = 1;
