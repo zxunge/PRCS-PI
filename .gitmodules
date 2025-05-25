@@ -1,0 +1,3 @@
+[submodule "mppp"]
+	path = mppp
+	url = https://github.com/bluescarni/mppp.git
