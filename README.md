@@ -19,6 +19,8 @@ It's very simple. Make sure you've installed gmp, mpfr libraries on your machine
 git clone --recursive https://github.com/zxunge/PRCS-PI.git
 cd PRCS-PI/ && mkdir build && cd $_
 cmake .. -DCMAKE_BUILD_TYPE=Release
+# It is required to run CMake again
+cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 
 ./prcspi
